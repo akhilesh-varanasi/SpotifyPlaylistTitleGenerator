@@ -1,0 +1,17 @@
+User Guide
+
+For our project, the main method is SpotifyApiRequest. Our app is console based, so it requires the user
+to input the redirect uri and the Spotify playlist link. To start off, the user must run this
+SpotifyApiRequest class.
+
+The program then prompts the user to enter a redirect url. The spotify authentication page is automatically opened.
+Once your credentials have been authenticated, it will open a redirect page (httpbin.org). Copy the entire url of
+the redirect page and enter it into the console. After that, the program will prompt you to enter the link of the
+playlist you want to change.
+
+The program will then go through all the songs on the playlist and gather all the artists. The most commonly
+occurring genre is used to pick a playlist title from our database and then the spotify playlist name is changed
+accordingly with the consent of the user.
+
+Link to video guide
+https://youtu.be/U1HYfJ5f7UU

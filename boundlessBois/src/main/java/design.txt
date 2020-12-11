@@ -1,0 +1,31 @@
+Design
+    The private fields we decided to use were Map<String, String[]> genrePlaylistName and  Map<String, Integer> genreCount,
+    We needed these two maps to store the names of the playlists based on the genre and the count
+    of all the genres from the songs in the playlist. We decided that String[] and Integer was the most efficient
+    and accessible way to store these values.
+
+    For our methods, we used specific design choices for all the variable types used.
+
+    For maxGenre, we decided to use ArrayList<String> as our list for the genres, since ArrayList is flexible
+    and the length of it can be easily modified. For storing the genres in our map, we used a contains method
+    to compare the genre names, so that we could also include broader genres.
+    For example, hyper-pop would be included in pop.
+
+    For nameGenerator, we use the genre as a string and then use a random variable to randomly pick out
+    a playlist name from our genrePlaylistName map. Using a console, we can ask the user to make very
+    specific requests (Y/N for yes or no, 'quit' to exit) to see if they want the playlist name or would like another
+    one.
+
+    In getArtistID, we used a String as a parameter to hold all the information from the Spotify API
+    GET request. We manipulated that string to extract just the artist ids. We had two private constants
+    to represent shifts that we needed to just extract specific substrings. The artist ids were held in an
+    array list, again for the flexibility of length.
+
+    SpotifyApiRequest uses the SpotifyAuthClient and SpotifyAuthCode classes to send the requests.
+    With the clientId and clientSecret,  authClient will authorize access to the Spotify API giving an authorization
+    token. Using this token authCode allows the client to use the Spotify API to get the artist and playlist data,
+    modify playlist data, and parse through it.
+
+    For the other methods that request information from the Spotify API, we took base code from example request methods in
+    the Github repository for the Spotify API Java Wrapper. We then modified it to meet our needs, by narrowing the scope
+    and changing the intent of the methods in some cases.

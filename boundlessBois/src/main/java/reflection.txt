@@ -1,0 +1,10 @@
+Reflection
+
+We learned how to use an API through Java. We learned how to implement Maven and other dependencies.
+Figuring out the process of how the interactions work with the authorization process and tokens was enjoyable.
+Implementing maps that we learned from class was fun. Collaborating with other students on a single project was
+a new experience that was helpful and informative. It was exciting to be able to bounce around ideas and discuss
+different things in depth. Although figuring out how to send the GET and POST requests and processing the data was a
+bit challenging, it was rewarding in the end. It was frustrating when we got errors that we didn't even understand
+and wasn't in our domain of experience, but we persisted. Youtube videos and instructional websites were helpful in
+understanding how APIs functioned. The Spotify API documentation was extremely helpful.
